@@ -92,11 +92,21 @@
   /* FIX: hero elements start at opacity:0 so fadeUp animation actually works */
   .hero-tag {
     font-family: var(--mono);
-    font-size: .75rem;
+    font-size: .85rem;
     color: var(--accent);
     letter-spacing: .2em;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp .6s ease forwards .2s;
+  }
+  .hero-tag1 {
+    font-family: var(--mono);
+    font-size: .75rem;
+    color: var(--accent);
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
     opacity: 0;
     animation: fadeUp .6s ease forwards .2s;
   }
@@ -274,11 +284,11 @@
     padding-bottom: .75rem;
     border-bottom: 1px solid var(--border);
   }
-  .tags-wrap { display: flex; flex-wrap: wrap; gap: .6rem; }
+  .tags-wrap { display: flex; flex-wrap: wrap; gap: .3rem; }
   .tag {
     font-family: var(--mono);
     font-size: .7rem;
-    padding: .35rem .8rem;
+    padding: .3rem .3rem;
     background: rgba(0,229,192,.06);
     border: 1px solid rgba(0,229,192,.2);
     color: var(--text);
@@ -537,7 +547,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">US // portfolio.v1</div>
+  <div class="nav-logo">Utkarsh Singh // portfolio</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -551,7 +561,9 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-inner">
-    <p class="hero-tag">// Final Year B.Tech — CSE (Data Science)</p>
+    <p class="hero-tag1">// B.TECH GRADUATE - CSE (DATA SCIENCE) </p>
+        <p class="hero-tag">// Data Analyst | Python & Automation Developer</p>
+
     <h1 class="hero-name">Utkarsh<br><span>Singh</span></h1>
     <p class="hero-desc">
       Data Analyst & Python Automation Developer — building end-to-end pipelines,
@@ -572,7 +584,7 @@
         <div class="stat-label">Internships</div>
       </div>
       <div class="stat">
-        <div class="stat-num">7.52</div>
+        <div class="stat-num">7.67</div>
         <div class="stat-label">CGPA</div>
       </div>
     </div>
@@ -587,13 +599,15 @@
     <div class="about-grid">
       <div class="about-text reveal">
         <p>
-          I'm a <strong>final-year B.Tech student</strong> specializing in Data Science at Moradabad Institute of Technology (AKTU), with hands-on experience building Python-based automation, OCR document processing, and data analytics systems.
+          I'm a <strong>B.Tech graduate in Computer Science</strong> specializing in <strong>Data Science</strong> at <strong>Moradabad Institute of Technology (AKTU)</strong> with hands-on experience building Python-based automation, OCR document processing, and data analytics systems.
+        </p>
+<p>I have experience building <strong>end-to-end solutions</strong> for <strong>automated evaluation, academic result analysis, document processing,</strong> and<strong> IVR-based workflows</strong>. I focus on developing <strong>scalable data extraction pipelines</strong> and practical <strong>automation solutions</strong> that <strong>solve real-world business problems.</strong></p>
+        <p>
+          I've also gained <strong>team leadership experience</strong> in two internships — managing <strong>8-10 member teams</strong> and <strong>delivering end-to-end data extraction, preprocessing, and automation workflows.</strong> I thrive at the intersection of data engineering and automation.
         </p>
         <p>
-          I've served as <strong>Team Lead</strong> in two internships — managing 7–8 member teams and delivering end-to-end data extraction, preprocessing, and automation workflows. I thrive at the intersection of data engineering and automation.
-        </p>
-        <p>
-          Currently undergoing intensive training in Power BI, Tableau, and SQL for business intelligence, while actively exploring AI/ML applications in real-world data problems.
+          
+          Currently undergoing training in <strong>Power BI, and SQL</strong> for business intelligence, while actively exploring <strong>AI/ML applications</strong> in real-world data problems to build my expertise in data, automation, software development, and AI-driven solutions.
         </p>
         <div class="about-info">
           <div class="info-row"><span class="label">📍 loc:</span><span class="val">Moradabad, India</span></div>
@@ -606,7 +620,7 @@
         <div class="edu-card">
           <div class="edu-degree">B.Tech — CSE (Data Science)</div>
           <div class="edu-school">Moradabad Institute Of Technology, AKTU &nbsp;·&nbsp; 2022–2026</div>
-          <span class="edu-score">CGPA: 7.52/10</span>
+          <span class="edu-score">CGPA: 7.67/10</span>
         </div>
         <div class="edu-card">
           <div class="edu-degree">Senior Secondary (Class XII)</div>
@@ -625,82 +639,179 @@
 
 <!-- SKILLS -->
 <section id="skills">
+
   <div class="container">
+
     <p class="section-tag reveal">// 02 — Skills</p>
     <h2 class="section-title reveal">My <em>Toolkit</em></h2>
+
     <div class="skills-grid">
+
+      <!-- 01 — Languages & Core -->
       <div class="skill-cat reveal">
         <div class="cat-title">⚡ Languages & Core</div>
+
         <div class="tags-wrap">
           <span class="tag">Python</span>
           <span class="tag">SQL</span>
+          <span class="tag">Java</span>
           <span class="tag">C</span>
+          <span class="tag">JavaScript</span>
           <span class="tag">HTML</span>
           <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
+          <span class="tag">OOP</span>
+          <span class="tag">DSA</span>
         </div>
       </div>
+
+
+      <!-- 02 — Data Engineering & Automation -->
+      <div class="skill-cat reveal">
+        <div class="cat-title">⚙️ Data Engineering & Automation</div>
+
+        <div class="tags-wrap">
+          <span class="tag blue">Data Extraction</span>
+          <span class="tag blue">ETL Pipelines</span>
+          <span class="tag blue">Data Transformation</span>
+          <span class="tag blue">Data Cleaning</span>
+          <span class="tag blue">Workflow Automation</span>
+          <span class="tag blue">Batch Processing</span>
+          <span class="tag blue">Data Validation</span>
+          <span class="tag blue">API Automation</span>
+        </div>
+      </div>
+
+
+      <!-- 03 — Data & Analytics -->
       <div class="skill-cat reveal">
         <div class="cat-title">📊 Data & Analytics</div>
+
         <div class="tags-wrap">
-          <span class="tag blue">Pandas</span>
-          <span class="tag blue">NumPy</span>
-          <span class="tag blue">Data Cleaning</span>
-          <span class="tag blue">EDA</span>
-          <span class="tag blue">Matplotlib</span>
-          <span class="tag blue">Seaborn</span>
-          <span class="tag blue">Power BI</span>
-          <span class="tag blue">Tableau</span>
+          <span class="tag purple">Pandas</span>
+          <span class="tag purple">NumPy</span>
+          <span class="tag purple">Scikit-learn</span>
+          <span class="tag purple">EDA</span>
+          <span class="tag purple">Statistical Analysis</span>
+          <span class="tag purple">Data Visualization</span>
+          <span class="tag purple">Matplotlib</span>
+          <span class="tag purple">Seaborn</span>
+          <span class="tag purple">Power BI</span>
+          <span class="tag purple">Tableau</span>
         </div>
       </div>
+
+
+      <!-- 04 — AI / ML / OCR -->
       <div class="skill-cat reveal">
         <div class="cat-title">🤖 AI / ML / OCR</div>
+
         <div class="tags-wrap">
-          <span class="tag purple">Tesseract OCR</span>
-          <span class="tag purple">OpenCV</span>
-          <span class="tag purple">NLTK</span>
-          <span class="tag purple">NLP</span>
-          <span class="tag purple">Text Processing</span>
+          <span class="tag ">Machine Learning</span>
+          <span class="tag ">NLP</span>
+          <span class="tag ">Generative AI</span>
+          <span class="tag ">LLM APIs</span>
+          <span class="tag ">Prompt Engineering</span>
+          <span class="tag ">Tesseract OCR</span>
+          <span class="tag ">OpenCV</span>
+          <span class="tag ">NLTK</span>
+          <span class="tag ">Document AI</span>
+          <span class="tag ">OCR Pipelines</span>
+          <span class="tag ">Text Processing</span>
         </div>
       </div>
+
+
+      <!-- 05 — Web Scraping & APIs -->
+      <div class="skill-cat reveal">
+        <div class="cat-title">🌐 Web Scraping & APIs</div>
+
+        <div class="tags-wrap">
+          <span class="tag blue">Web Scraping</span>
+          <span class="tag blue">Data Extraction</span>
+          <span class="tag blue">Selenium</span>
+          <span class="tag blue">Playwright</span>
+          <span class="tag blue">BeautifulSoup</span>
+          <span class="tag blue">Requests</span>
+          <span class="tag blue">Regex</span>
+          <span class="tag blue">REST APIs</span>
+          <span class="tag blue">API Integration</span>
+          <span class="tag blue">Twilio API</span>
+          <span class="tag blue">Ngrok</span>
+        </div>
+      </div>
+
+
+      <!-- 06 — Backend & Development -->
+      <div class="skill-cat reveal">
+        <div class="cat-title">🖥️ Backend & Development</div>
+
+        <div class="tags-wrap">
+          <span class="tag purple">FastAPI</span>
+          <span class="tag purple">Flask</span>
+          <span class="tag purple">Streamlit</span>
+          <span class="tag purple">Node.js</span>
+          <span class="tag purple">REST API Development</span>
+          <span class="tag purple">Firebase</span>
+          <span class="tag purple">MySQL</span>
+          <span class="tag purple">MongoDB</span>
+          <span class="tag purple">SQLite</span>
+        </div>
+      </div>
+
+
+      <!-- 07 — Tools & Platforms -->
       <div class="skill-cat reveal">
         <div class="cat-title">🛠️ Tools & Platforms</div>
+
         <div class="tags-wrap">
-          <span class="tag">Streamlit</span>
-          <span class="tag">Flask</span>
           <span class="tag">Git</span>
           <span class="tag">GitHub</span>
           <span class="tag">VS Code</span>
           <span class="tag">Jupyter</span>
-          <span class="tag">Firebase</span>
-          <span class="tag">MySQL</span>
-          <span class="tag">SQLite</span>
+          <span class="tag">Postman</span>
           <span class="tag">Kaggle</span>
+          <span class="tag">Figma</span>
         </div>
       </div>
-      <div class="skill-cat reveal">
-        <div class="cat-title">🌐 Web Scraping & APIs</div>
-        <div class="tags-wrap">
-          <span class="tag blue">Selenium</span>
-          <span class="tag blue">BeautifulSoup</span>
-          <span class="tag blue">Regex</span>
-          <span class="tag blue">Twilio API</span>
-          <span class="tag blue">REST APIs</span>
-          <span class="tag blue">Ngrok</span>
-        </div>
-      </div>
+
+
+      <!-- 08 — Collaboration -->
       <div class="skill-cat reveal">
         <div class="cat-title">🤝 Collaboration</div>
+
         <div class="tags-wrap">
-          <span class="tag purple">Team Leadership</span>
-          <span class="tag purple">JIRA</span>
-          <span class="tag purple">Slack</span>
-          <span class="tag purple">Figma</span>
-          <span class="tag purple">Agile</span>
+          <span class="tag blue">Team Leadership</span>
+          <span class="tag blue">Project Management</span>
+          <span class="tag blue">Requirements Analysis</span>
+          <span class="tag blue">Technical Documentation</span>
+          <span class="tag blue">JIRA</span>
+          <span class="tag blue">Slack</span>
+          <span class="tag blue">Agile</span>
+          <span class="tag blue">Project Coordination</span>
         </div>
       </div>
+
+
+      <!-- 09 — Systems & Solutions
+      <div class="skill-cat reveal">
+        <div class="cat-title">🏗️ Systems & Solutions</div>
+
+        <div class="tags-wrap">
+          <span class="tag purple">Automation Systems</span>
+          <span class="tag purple">OCR-Based Systems</span>
+          <span class="tag purple">Data Extraction Pipelines</span>
+          <span class="tag purple">Document Processing</span>
+          <span class="tag purple">Web Scraping Systems</span>
+          <span class="tag purple">AI-Powered Applications</span>
+          <span class="tag purple">Data Analytics Dashboards</span>
+          <span class="tag purple">IVR Workflows</span>
+        </div>
+      </div> -->
+
     </div>
+
   </div>
+
 </section>
 
 <!-- PROJECTS -->
@@ -823,7 +934,7 @@
         </ul>
       </div>
       <div class="tl-item reveal">
-        <div class="tl-meta">May 2025 – Present</div>
+        <div class="tl-meta">May 2025 – June 2026 </div>
         <div class="tl-role">Data Analytics Training</div>
         <div class="tl-company">DUCAT</div>
         <ul class="tl-points">
@@ -867,7 +978,7 @@
     <div class="contact-wrap">
       <div class="reveal">
         <p class="contact-tagline">
-          Open to <strong>full-time roles</strong>, <strong>internships</strong>, and interesting freelance projects in data analytics, automation, and Python development. I typically respond within 24 hours.
+          Open to <strong>full-time roles</strong>, and <strong>interesting freelance projects</strong> in data analytics, automation, and Python development. I typically respond within 24 hours.
         </p>
         <div class="contact-links">
           <!-- FIX: Direct mailto: link — no Cloudflare dependency -->
@@ -918,7 +1029,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-copy">© 2025 <span>Utkarsh Singh</span> — Built with passion & Python mindset</div>
+  <div class="footer-copy">© 2026 <span>Utkarsh Singh</span> — Built with passion & Python mindset</div>
   <a href="#hero" class="footer-back">↑ Back to top</a>
 </footer>
 
